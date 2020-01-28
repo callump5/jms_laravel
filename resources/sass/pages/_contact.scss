@@ -1,0 +1,28 @@
+.section-contact-page {
+    &__item {
+        font-size: 1.8rem;
+
+        &--icon {
+            height: 4rem;
+
+            &-border {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid $color-primary;
+                border-radius: 50%;
+                margin: 0 auto;
+                height: 8rem;
+                width: 8rem;
+                margin-bottom: .5rem;
+                transition: all .2s;
+                @include box-shadow;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}

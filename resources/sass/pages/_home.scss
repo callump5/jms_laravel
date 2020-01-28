@@ -1,0 +1,27 @@
+.image-block{
+    position: relative;
+    display: block;
+}
+.home{
+    &__images{
+        &--image-1 {
+            height: 40rem;
+            width: 100%;
+            display: block;
+            background-image: url("/images/cleaning1.jpeg");
+            background-size: cover;
+            background-position: center; 
+        }
+        &--image-2 {
+            height: 15rem;
+            width: 15rem;
+            display: block;
+            position: absolute;
+            background-image: url("/images/guarentee.png");
+            background-size: cover;
+            background-position: center; 
+            bottom: -20px;
+            right: -20px;
+        }
+    }
+}

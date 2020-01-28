@@ -1,0 +1,27 @@
+.section-landlord {
+    &__service {
+        text-align: center;
+        background-color: white;
+        padding: 3rem 2rem;
+        @include box-shadow;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-5px)
+        }
+
+
+        &--title {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        &--price {
+            font-size: 1.6rem;
+        }
+
+        &--icon {
+            height: 7rem;
+        }
+    }
+
+}

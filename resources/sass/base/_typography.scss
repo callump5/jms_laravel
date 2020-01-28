@@ -1,0 +1,114 @@
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #282828; 
+}
+
+
+a {
+    font-size: 1.7rem; 
+}
+
+label, input {
+    font-size: 1.6em;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    line-height: 2.4rem; 
+}
+
+.heading-primary {
+    font-size: 5rem;
+    text-transform: uppercase; 
+
+    &--type-1 {
+        font-size: 3.5rem;
+        text-transform: uppercase; 
+    }
+
+    &--blue {
+        color: #1eabfd; 
+    }
+
+    &--underline {
+        border-bottom: 4px solid #1eabfd; 
+    }
+}
+  
+.heading-secondary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: .8rem 0 1.1rem 0;
+
+    &--blue {
+        color: #1eabfd; 
+    }
+
+    &underline {
+        border-bottom: 4px solid #1eabfd; 
+    }
+
+    &::before {
+        content: "";
+        height: 3px;
+        width: 15rem;
+        display: inline-block;
+        background-color: #1eabfd;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    &::after {
+        content: "";
+        height: 3px;
+        width: 15rem;
+        display: inline-block;
+        background-color: #1eabfd;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+}
+
+
+.heading-tertiary {
+    font-size: 3rem;
+    position: relative;
+    display: block;
+    padding-bottom: 1rem; 
+  
+    &::after {
+        content: "";
+        height: 3px;
+        width: 2rem;
+        display: inline-block;
+        background-color: #1eabfd;
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+    }
+  
+    &--type-2 {
+        color: white; 
+    }
+
+    &--type-3 {
+        color: white; 
+        font-size: 2rem;
+        text-align: left;
+        margin: 0;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+    &--type-2::after {
+      background-color: #282828; 
+    }
+}

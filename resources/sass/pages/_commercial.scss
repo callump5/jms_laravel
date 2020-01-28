@@ -1,0 +1,18 @@
+.section-services {
+
+    &__service {
+        text-align: center;
+        background-color: white;
+        padding: 3rem 4rem;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        border-bottom: 3px solid $color-primary;
+        border-right: 3px solid $color-primary;
+        transition: all .2s;
+        @include box-shadow;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
