@@ -12,14 +12,8 @@
     </script>
     -->
 
+    <!-- Meta Tags -->
     <title>JMS, Professional Commercial | Office | End of Tenancy Cleaning Service Essex</title>
-
-    <link rel="shortcut icon" href="/style/icons/favicon-96x96.png"/>
-    <link rel="stylesheet" href="/css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://jmscommercialcleaning.co.uk">
-    <script src="/js/jquery.js"></script>
-
     <meta name="robots" content="index, follow" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="Office Cleaning Services, Commercial Cleaning Services, Cleaning Services UK,
@@ -35,6 +29,19 @@
     <meta property="og:url" content="jmscommercialcleaning.co.uk" />
     <meta property="og:image" content="/style/logo/jms-original-logo.png">
     <meta property="og:site_name" content="JMS Commercial Cleaning" />
+    <link rel="canonical" href="https://jmscommercialcleaning.co.uk">
+
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="/style/icons/favicon-96x96.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/seadog-theme.css">
+    <link rel="stylesheet" href="/css/sweetalert2.min.css">
+
+    <!-- Script -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/sweetalert2.min.js"></script>
 
 </head>
 <body>

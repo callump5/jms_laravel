@@ -1,6 +1,10 @@
 @include('partials/header')
 @include('partials/nav')
 
-@yield('page')
+<main>
+    @yield('page')
+</main>
 
+@include('partials/contact')
+@include('partials/footnav')
 @include('partials/footer')

@@ -9,16 +9,19 @@
 
 html {
     font-size: 62.5%; 
-}
+} 
 
 body {
     box-sizing: border-box; 
 }
 
 section {
-    padding: 8rem 0; 
+    padding: 7rem 0; 
 }
 
+.u-section-padding{
+    padding: 3rem 0;
+}
 
 .active {
     color: $color-primary !important;

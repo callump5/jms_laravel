@@ -81,8 +81,14 @@ label, input {
     position: relative;
     display: block;
     padding-bottom: 1rem; 
+    color: #282828;
+    text-decoration: none;
+
+    
+    
   
     &::after {
+        transition: .2s width;
         content: "";
         height: 3px;
         width: 2rem;
@@ -111,4 +117,7 @@ label, input {
     &--type-2::after {
       background-color: #282828; 
     }
+}
+.heading-tertiary:hover::after {
+    width: 100%;
 }

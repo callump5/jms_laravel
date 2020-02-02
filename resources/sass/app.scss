@@ -1,24 +1,8 @@
-@import "abstract/mixins";
-@import "abstract/variables";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+// Variables
+@import 'variables';
 
-@import "components/button";
-@import "components/image-circles";
-@import "components/page-header";
-@import "components/tick-list";
-@import "components/collapsable";
-
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/contact";
-@import "layout/landing";
-
-@import "pages/home.scss";
-@import "pages/commercial.scss";
-@import "pages/landlord.scss";
-@import "pages/contact";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';

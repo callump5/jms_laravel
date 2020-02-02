@@ -56,10 +56,12 @@
         border-radius: 50%;
         border: 0.5rem solid #f1f1f8;
         display: block;
-        background-size: cover;
+        background-size: 90%;
         background-position: center;
         height: 35rem;
         width: 35rem;
+        transition: all .2s;
+        background-color: white;
         background-image: url("/images/team.jpeg"); 
     }
     
