@@ -1,22 +1,31 @@
+@extends('layouts.admin')
+
+
 @include('partials/header')
 
 
-<table>
-<th>
-    <tr>
-        <td>ID</td>
-        <td>Post</td>
-    </tr>
-</th>
-<tbody>
-@foreach($contacts as $contact)
-<tr id="post-row-{{$contact->id}}">
-    <td>{{$contact->id}}</td>
-    <td><a href="{{route('view-contact', $contact)}}">{{$contact->name}}</a></td>
-</tr>
-@endforeach
+@section('dash-title')
+Contact Requests
+@endsection
 
-</tbody>
+@section('buttons')
+@endsection
 
-</table>
+@section('dashboard')
+
+    @foreach($contacts as $contact)
+        <div id="post-row-{{$contact->id}}" class="card shadow mb-4">
+            <div class="card-header d-sm-flex align-items-center justify-content-between mb-4">
+            <h6 class="m-0 font-weight-bold text-primary"><a href="{{route( 'view-contact', $contact )}}">{{$contact->name}}</a></h6>
+            </div>
+            <div class="card-body">
+                <p>{{$contact->message}}</p>
+            </div>
+        </div>
+    @endforeach
+
+
+@endsection
+
+@include('partials/footer')
 

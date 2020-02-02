@@ -1,28 +1,15 @@
 /* Reset */
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit; 
-}
-
-html {
-    font-size: 62.5%; 
-} 
-
-body {
-    box-sizing: border-box; 
-}
-
 section {
-    padding: 7rem 0; 
+    padding: 5rem 0; 
 }
 
 .u-section-padding{
     padding: 3rem 0;
 }
 
+p {
+    margin-bottom: 20px;
+}
 .active {
     color: $color-primary !important;
 }

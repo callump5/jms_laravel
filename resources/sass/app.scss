@@ -6,3 +6,21 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+
+@import 'base/base';
+@import 'base/utilities';
+@import 'base/typography';
+
+@import 'components/button';
+@import 'components/image-circles';
+
+@import "pages/home";
+
+
+@import 'layout/landing';
+@import 'layout/header';

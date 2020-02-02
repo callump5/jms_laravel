@@ -4,26 +4,10 @@ body {
     color: #282828; 
 }
 
-
-a {
-    font-size: 1.7rem; 
-}
-
-label, input {
-    font-size: 1.6em;
-}
-
-.paragraph {
-    font-size: 1.6rem;
-    line-height: 2.4rem; 
-}
-
 .heading-primary {
-    font-size: 5rem;
     text-transform: uppercase; 
 
     &--type-1 {
-        font-size: 3.5rem;
         text-transform: uppercase; 
     }
 
@@ -37,10 +21,9 @@ label, input {
 }
   
 .heading-secondary {
-    font-size: 4rem;
     text-transform: uppercase;
     position: relative;
-    padding: .8rem 0 1.1rem 0;
+    padding: .8rem 0;
 
     &--blue {
         color: #1eabfd; 
@@ -77,15 +60,11 @@ label, input {
 
 
 .heading-tertiary {
-    font-size: 3rem;
     position: relative;
     display: block;
     padding-bottom: 1rem; 
     color: #282828;
-    text-decoration: none;
-
-    
-    
+    text-decoration: none;    
   
     &::after {
         transition: .2s width;
@@ -105,7 +84,6 @@ label, input {
 
     &--type-3 {
         color: white; 
-        font-size: 2rem;
         text-align: left;
         margin: 0;
 

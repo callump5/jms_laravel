@@ -1,28 +1,40 @@
+@extends('layouts.admin')
+
+
 @include('partials/header')
 
 
+@section('dash-title')
+Blog Post
+@endsection
 
-<a href="{{route('create-post')}}">Create Post</a>
-<table>
-<th>
-    <tr>
-        <td>Post</td>
-        <td>Edit</td>
-        <td>Delete</td>
-    </tr>
-</th>
-<tbody>
+@section('buttons')
+<a href="{{route('create-post')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Create Post</a>
+@endsection
+
+@section('dashboard')
+
+
 @foreach($posts as $post)
-<tr id="post-row-{{$post->id}}">
-    <td><a href="{{route( 'edit-post', $post->slug )}}">{{$post->title}}</a></td>
-    <td><a href="{{route( 'edit-post', $post->slug )}}">Edit</a></td>
-    <td><button data-target='{{$post->id}}' value="{{$post->slug}}" class="delete-btn">Delete</button></td>
-</tr>
+<div id="post-row-{{$post->id}}" class="card shadow mb-4">
+    <div class="card-header d-sm-flex align-items-center justify-content-between mb-4">
+      <h6 class="m-0 font-weight-bold text-primary"><a href="{{route( 'edit-post', $post->slug )}}">{{$post->title}}</a></h6>
+      
+      <div>
+        <a class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="{{route( 'edit-post', $post->slug )}}">Edit</a>
+        <button data-target='{{$post->id}}' value="{{$post->slug}}" class="delete-btn d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Delete</button>  
+      </div>
+      
+    </div>
+    <div class="card-body">
+        <p>{{$post->excerpt}}</p>
+    </div>
+</div>
+
 @endforeach
 
-</tbody>
 
-</table>
+@endsection
 
 
 <script type="text/javascript">

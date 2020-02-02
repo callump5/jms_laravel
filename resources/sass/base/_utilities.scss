@@ -1,12 +1,13 @@
 
-.u-container {
-    width: 80%;
-    margin: 0 auto; 
+
+.u-flex-row {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.u-trim{
-    
-}
+
 
 .u-center-text {
     text-align: center; 
@@ -57,23 +58,3 @@
     background:linear-gradient( to right, #1eabfd 50%, #f1f1f8 50%)
 }
   
-.u-flexy-row {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
-.u-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.u-flex-row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}

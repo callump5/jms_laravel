@@ -2,52 +2,27 @@
 
 @section('page')
 
-
-<section class="section-landing">
-
-    <div class="u-container">
-
-        <div class="section-landing__text-box">
-            <h1 class="heading-primary u-margin-medium">
-                <span class="heading-primary--underline falling-word falling-word--1">You</span> 
-                <span class="falling-word falling-word--2">deserve</span>
-                <span class="falling-word falling-word--3">a</span>
-                <span class="falling-word heading-primary--blue falling-word--4">break</span></h1>
-            
-            
-                <p class="paragraph u-margin-medium">Its quick to forget the benefits a clean and healthy working environment can bring. Stop putting it off and give us a call today so we can start putting the smiles back on your face as you walk into work!</p>
-            <div class="buttons">
-                <a href="#" class="buttons__button buttons__button--b1">Read More</a>
-                <a href="#" class="buttons__button buttons__button--b2">Get A Quote</a>
-            </div>
-        </div>
-</section>
+@include('partials/landing')
 
 
     <section class="section-about">
-        <div class="u-container">
-            <div class="u-center-text">
-                <h2 class="heading-secondary u-margin-medium">About Us</h2>
-                <p class="paragraph u-margin-big"></p>
-                <div class="row">
-                    <div class="col-2-of-4">
-                        <div class="image-circles">
-                            <div  class="image-circles__image image-circles__image--i1"></div>
-                            <div  class="image-circles__image image-circles__image--i2"></div>
-                        </div>
-                    </div>
-                    <div class="col-2-of-4">
-                        <div class="u-align-middle">
-                            <h3 class="heading-tertiary u-margin-small">Who We Are</h3>
-                            <p class="paragraph u-margin-medium">Based in Southend, Essex, JMS Commercial Cleaning is a reliable cleaning company that has built up a solid reputation, purely built on trust in Southend, Basildon, and surrounding areas. We pride ourselves on our reliable, consistent and friendly commercial cleaning service for our customers.
-                            </p>
-                            <div class="buttons">
-                                <a href="/" class="buttons__button">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+
+
+            <h2 class="heading-secondary u-margin-medium u-center-text">About Us</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div  class="home__images--image-1"></div>
+                    <div  class="home__images--image-2"></div>
+                </div>
+                <div class="col-6 u-padding-10">
+                    <h3 class="heading-tertiary">Who We Are</h3>
+                    <p>Based in Southend, Essex, JMS Commercial Cleaning is a reliable cleaning company that has built up a solid reputation, purely built on trust in Southend, Basildon, and surrounding areas. We pride ourselves on our reliable, consistent and friendly commercial cleaning service for our customers.</p>
+                    <a href="/" class="btn">Read More</a>      
                 </div>
             </div>
+
+                 
         </div>
     </section>
 

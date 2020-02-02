@@ -8,25 +8,20 @@
 
     
     &__text-box {
-        padding: 6rem 0;
+        width: 60%;
+        padding: 8rem 0;
         
         & > .paragraph {
         animation: move-in 1s  4s   backwards;
         width: 50%;
-        font-size: 2rem;
         }
         
-        .buttons__button {
-            float: left; 
-        }
         
-        .buttons__button--b1 {
-            animation: move-in 1s 4.5s backwards; 
-        }
-        
-        .buttons__button--b2 {
-            animation: move-in 1s 5s backwards;
-            background-color: #282828;
-        }
     }
+}
+.buttons .btn{
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+
 }

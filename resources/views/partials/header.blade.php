@@ -36,7 +36,6 @@
     <link rel="shortcut icon" href="/style/icons/favicon-96x96.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/seadog-theme.css">
     <link rel="stylesheet" href="/css/sweetalert2.min.css">
 
     <!-- Script -->
