@@ -39,9 +39,10 @@ class BlogController extends Controller
         $post->slug     = request('slug');
         $post->excerpt  = request('excerpt');
         $post->body     = request('body');
-        $post->image    = request('image');
+        $post->meta    = request('meta');
+        $post->description    = request('description');
         $post->save();
-        return redirect('/admin-panel/blog-post/' . $post->slug . '/edit');
+        return redirect('/admin-panel/blog-posts/');
     }
 
     public function edit(Request $request, BlogPost $post){
@@ -55,8 +56,9 @@ class BlogController extends Controller
         $post->slug     = request('slug');
         $post->excerpt  = request('excerpt');
         $post->body     = request('body');
-        $post->image    = request('image');
         $post->save();
+
+        return redirect('/admin-panel/blog-posts');
     }
 
     public function deleteAPI(BlogPost $post){

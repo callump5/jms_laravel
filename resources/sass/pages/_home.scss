@@ -6,22 +6,24 @@
     &__images{
         &--image-1 {
             height: 25rem;
-            width: 100%;
+            width: 25rem;
+            border-radius: 50%;
+            margin: 0 auto;
             display: block;
             background-image: url("/images/cleaning1.jpeg");
             background-size: cover;
             background-position: center; 
         }
         &--image-2 {
-            height: 8rem;
-            width: 8rem;
+            height: 10rem;
+            width: 10rem;
             display: block;
             position: absolute;
             background-image: url("/images/guarentee.png");
             background-size: cover;
             background-position: center; 
             bottom: -20px;
-            right: -20px;
+            right: 34px;
         }
     }
 }

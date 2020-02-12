@@ -14,6 +14,8 @@
 
     <!-- Meta Tags -->
     <title>JMS, Professional Commercial | Office | End of Tenancy Cleaning Service Essex</title>
+    
+    <meta name="">
     <meta name="robots" content="index, follow" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="Office Cleaning Services, Commercial Cleaning Services, Cleaning Services UK,
@@ -34,12 +36,14 @@
 
     <!-- Styles -->
     <link rel="shortcut icon" href="/style/icons/favicon-96x96.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/sweetalert2.min.css">
 
     <!-- Script -->
     <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
     <script src="/js/sweetalert2.min.js"></script>
 
 </head>

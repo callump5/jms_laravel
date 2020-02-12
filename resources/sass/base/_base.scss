@@ -1,15 +1,16 @@
 /* Reset */
-section {
-    padding: 5rem 0; 
-}
 
-.u-section-padding{
-    padding: 3rem 0;
-}
-
-p {
-    margin-bottom: 20px;
-}
 .active {
     color: $color-primary !important;
+}
+
+.textarea-height {
+    height: 1000px !important;
+}
+
+.paragraph {
+    font-size: 16px;
+    letter-spacing: 2px;
+    max-width: 850px;
+    margin: 0 auto;
 }

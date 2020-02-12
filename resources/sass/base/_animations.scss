@@ -2,7 +2,7 @@
     display: inline-block; 
 
     &--1 {
-        animation: falling-left .5s 1.5s ease-out backwards; 
+        animation: falling-left .5s 1.5s ease-out backwards !important; 
     }
     
     &--1:hover {
@@ -38,6 +38,7 @@
 @keyframes falling-left {
     0% {
         opacity: 0;
+        top: 100;
         transform: translateY(-7rem) rotate(-21deg); 
     }
     
@@ -46,6 +47,7 @@
     }
     
     100% {
+        top: 0;
         opacity: 1;
         transform: translateY(0); 
       } 

@@ -20,6 +20,7 @@ class CreateContactRequestsTable extends Migration
             $table->string('number');
             $table->string('email');
             $table->string('service');
+            $table->boolean('viewed');
             $table->string('location');
             $table->text('message')->nullable();;
             

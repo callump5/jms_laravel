@@ -4,33 +4,28 @@
 @include('partials/header')
 
 
-@section('dash-title')
-Blog Post
+@section('dashboard-title')
+Blog Posts
 @endsection
 
-@section('buttons')
-<a href="{{route('create-post')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Create Post</a>
-@endsection
 
-@section('dashboard')
+@push('dashboard-buttons')
+    @component('components/admin/button', [
+        'href' => '/admin-panel/blog-post/create',
+        'icon' => 'plus',
+        'text' => 'Add Item'
+    ])
+    @endcomponent
+@endpush
+
+@section('dashboard-content')
 
 
 @foreach($posts as $post)
-<div id="post-row-{{$post->id}}" class="card shadow mb-4">
-    <div class="card-header d-sm-flex align-items-center justify-content-between mb-4">
-      <h6 class="m-0 font-weight-bold text-primary"><a href="{{route( 'edit-post', $post->slug )}}">{{$post->title}}</a></h6>
-      
-      <div>
-        <a class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="{{route( 'edit-post', $post->slug )}}">Edit</a>
-        <button data-target='{{$post->id}}' value="{{$post->slug}}" class="delete-btn d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Delete</button>  
-      </div>
-      
-    </div>
-    <div class="card-body">
-        <p>{{$post->excerpt}}</p>
-    </div>
-</div>
-
+@component('components/admin/post-card', [
+    'post' => $post
+])
+@endcomponent
 @endforeach
 
 

@@ -1,27 +1,35 @@
-.section-landing {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/landing/pic1.png");
+
+
+
+.landing {
+    background-image: url("/landing/pic1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-
-
+    background-color: rgba($color: #ffffff, $alpha: .6);
+    background-blend-mode: overlay;
+    position: relative; 
     
-    &__text-box {
-        width: 60%;
-        padding: 8rem 0;
-        
-        & > .paragraph {
-        animation: move-in 1s  4s   backwards;
-        width: 50%;
-        }
-        
-        
-    }
-}
-.buttons .btn{
-    &:not(:last-child){
-        margin-right: 10px;
+    &__content{
+        height: 90vh;
     }
 
+    &__heading {
+        text-transform: capitalize;
+        font-size: 52px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    &__sub-heading {
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        & .btn {
+            &:last-child{
+                background-color: $color-accent;
+            }
+        }
+    }
 }

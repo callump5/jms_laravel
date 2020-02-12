@@ -18,6 +18,9 @@ Route::get('/commercial-cleaning', 'PageController@commercial')->name('commercia
 Route::get('/end-of-tenancy', 'PageController@tenancy')->name('tenancy');
 Route::get('/contact', 'PageController@contact')->name('contact');
 
+Route::get('/403', 'PageController@forbid')->name('forbid');
+
+
 //Blog Routes
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog/{post}', 'BlogController@show')->name('blog-post');
@@ -41,5 +44,3 @@ Route::delete('/admin-panel/blog-post/{post}/delete', 'BlogController@delete')->
 Route::get('/admin-panel/contact-request/{contact}/view', 'AdminController@contactShow')->name('view-contact')->middleware('auth');;
 Route::delete('/admin-panel/contact-request/delete', 'AdminController@contactDelete')->name('delete-contact')->middleware('auth');;
 Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');

@@ -21,5 +21,9 @@ class PageController extends Controller
     public function contact(){
         return view('pages.contact');
     }
+
+    public function forbid(){
+        return view('status.403');
+    }
     
 }

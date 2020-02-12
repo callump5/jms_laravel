@@ -5,19 +5,21 @@
 @include('partials/landing')
 
 
-    <section class="section-about">
+    <section class="home__about u-section-padding">
         <div class="container">
+            <h2 class="heading-secondary u-center-text">About Us</h2>
+            <p class="paragraph u-center-text">Its quick to forget the benefits a clean and healthy working
+                environment can bring. Stop putting it off and give us a call today so we can start putting the
+                smiles back on your face as you walk into work!</p>    
 
-
-            <h2 class="heading-secondary u-margin-medium u-center-text">About Us</h2>
-            <div class="row">
+            <div class="row u-padding-top">
                 <div class="col-6">
                     <div  class="home__images--image-1"></div>
                     <div  class="home__images--image-2"></div>
                 </div>
-                <div class="col-6 u-padding-10">
+                <div class="col-6 u-flex-vert-center u-padding-left">
                     <h3 class="heading-tertiary">Who We Are</h3>
-                    <p>Based in Southend, Essex, JMS Commercial Cleaning is a reliable cleaning company that has built up a solid reputation, purely built on trust in Southend, Basildon, and surrounding areas. We pride ourselves on our reliable, consistent and friendly commercial cleaning service for our customers.</p>
+                    <p class="paragraph u-margin-small">Based in Southend, Essex, JMS Commercial Cleaning is a reliable cleaning company that has built up a solid reputation, purely built on trust in Southend, Basildon, and surrounding areas. We pride ourselves on our reliable, consistent and friendly commercial cleaning service for our customers.</p>
                     <a href="/" class="btn">Read More</a>      
                 </div>
             </div>
@@ -29,8 +31,8 @@
     <section class="section-services u-color-offset">
         <div class="u-container">
             <div class="u-center-text">
-                <h2 class="heading-secondary u-margin-medium">Our Service</h2>
-                <p class="paragraph u-margin-big">No matter which industry you are in, you will probably find yourself needing a cleaner, whether it's for a routine clean to keep your office nice and clean, or just a once-off deep clean, to help brighten it up after the busy period! Whatever situation you find yourself in, JMS has the solution.</p>
+                <h2 class="heading-secondary">Our Service</h2>
+                <p class="paragraph u-margin-big u-margin-align">No matter which industry you are in, you will probably find yourself needing a cleaner, whether it's for a routine clean to keep your office nice and clean, or just a once-off deep clean, to help brighten it up after the busy period! Whatever situation you find yourself in, JMS has the solution.</p>
                 
                 <div class="service-circle">
                     

@@ -10,9 +10,9 @@ class AdminController extends Controller
 {
 
     public function adminPanel(Request $request){
-
         return view('admin.panel');
     }
+
     public function contactRequest(Request $request){
         $contact = new ContactRequest;
         $contact->name     = request('name');
@@ -21,8 +21,8 @@ class AdminController extends Controller
         $contact->service  = request('email');
         $contact->location = request('location');
         $contact->message  = request('message');
+        $contact->viewed = false;
         $contact->save();
-
         return response()->json(['success'=>'Success']);
     }
 
@@ -31,13 +31,14 @@ class AdminController extends Controller
         return view('admin.posts', ['posts' => $posts]);
     }
 
-
     public function contactIndex(){
-        $contacts = ContactRequest::all();
+        $contacts = ContactRequest::orderBy('viewed', 'ASC')->get();
         return view('admin.contacts', ['contacts' => $contacts]);
     }
 
     public function contactShow(Request $request, ContactRequest $contact){
+        $contact->viewed = true;
+        $contact->save();
         return view('admin.view-contact', ['contact' => $contact]);
     }
 
@@ -46,8 +47,6 @@ class AdminController extends Controller
         $contact->delete();
         return redirect('admin-panel/contact-request');
     }
-
-
 
     /*public function adminShowItems(Request $request){
         $item = request('item');
