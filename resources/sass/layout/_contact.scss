@@ -1,69 +1,105 @@
-
 .section-contact {
-    background-color: $color-primary;
-    width: 55%;
-    padding: 6rem 7rem 6rem 0;
-}
-
-input::placeholder {
-    color: #fff;
-    opacity: 1;
-}
-.contact-form {
-   
-    
-    [class^='col-'] > input {
-        margin-bottom: 2rem;
+    padding-right: 50px;
+    & ::placeholder {
+      color: white;
+      opacity: .7;
     }
 
-    &  input:not(:last-child) {
-        margin-bottom: 2rem;
+    & input {
+        color: #fff !important;
+        background-color: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid white !important;
+        border-radius: 0 !important;
+        padding: .6rem 0 !important;
+        font-size: 18px;
     }
-    &__label {
-        color: white;
-        font-size: 2rem;
+
+    & .col-6 {
+        padding-left: 0 !important;
+    } 
+
+    & .row {
+        & .col-6 {
+            padding: 0 !important; 
+
+            &:not(:last-child){
+                padding-right: 20px !important;
+            }
+        }
     }
-    &__input {
-        width: 100%;
-        color: #fff;
-        font-size: 1.8rem;
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid white;
-        padding: .6rem 0;
+
+    & form {
+        .row {
+            &:not(:last-child){
+                margin-bottom: 20px !important;
+            } 
+        }
     }
 }
+
 
 .section-testimonial {
-    width: 45%;
-    height: 49.9rem;
-    padding: 6rem 0 6rem 7rem;
+    padding-left: 50px;
 
     &__testimonial {
         background-color: white;
         border-radius: 3px;
-        padding: 3rem 1.5rem;
+        padding: 2rem 2rem;
         box-shadow: 0 0.2rem .5rem rgba(0, 0, 0, 0.3);
 
         &--text {
-            margin-bottom: .8rem;
+        margin-bottom: .8rem;
+        font-size: 14px;
         }
 
         &--author {
-            color: $color-primary;
+        color: $color-primary;
 
-            font-size: 1.5rem;
-            text-transform: uppercase;
+        font-size: 19px;
+        text-transform: uppercase;
         }
         &--position {
-            font-size: 1.2rem;
+        font-size: 12px;
         }
     }
 }
 
+/*
+.section-contact {
+background-color: $color-primary;
+width: 55%;
+padding: 6rem 7rem 6rem 0;
+}
+
+.contact-form {
+
+
+[class^='col-'] > input {
+margin-bottom: 2rem;
+}
+
+&  input:not(:last-child) {
+margin-bottom: 2rem;
+}
+&__label {
+color: white;
+font-size: 2rem;
+}
+}
+
+.section-testimonial {
+width: 45%;
+height: 49.9rem;
+padding: 6rem 0 6rem 7rem;
+
+}
+
 
 .section-map__map {
-    width:55%;
-    height: 49.9rem;
-    border: none;
+width:55%;
+height: 49.9rem;
+border: none;
 }
+
+*/

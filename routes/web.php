@@ -15,7 +15,7 @@
 Route::get('/', 'PageController@home')->name('home');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/commercial-cleaning', 'PageController@commercial')->name('commercial');
-Route::get('/end-of-tenancy', 'PageController@tenancy')->name('tenancy');
+Route::get('/end-of-tenancy-cleaning', 'PageController@tenancy')->name('tenancy');
 Route::get('/contact', 'PageController@contact')->name('contact');
 
 Route::get('/403', 'PageController@forbid')->name('forbid');

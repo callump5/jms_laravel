@@ -1,14 +1,21 @@
 .tick-list {
+    padding: 0 !important;
     list-style: none;
-    font-size: 1.6rem;
 
     &--item{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         margin-bottom: .5rem;
+
+        & p {
+            margin: 0 !important;
+        }
         &::before {
             color: $color-primary;  
             content: '✓';
-            float: left;
-            font-size: 2.5rem; 
+            font-size: 31px;
             margin-right: 1rem;
         }
 

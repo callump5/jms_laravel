@@ -3,6 +3,7 @@
       <h6 class="m-0 font-weight-bold text-primary"><a href="{{route( 'edit-post', $post->slug )}}">{{$post->title}}</a></h6>
       
       <div>
+        <a class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="{{route( 'blog-post', $post->slug )}}">View</a>
         <a class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="{{route( 'edit-post', $post->slug )}}">Edit</a>
         <button data-target='{{$post->id}}' value="{{$post->slug}}" class="delete-btn d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Delete</button>  
       </div>

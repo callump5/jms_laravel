@@ -1,5 +1,11 @@
 .page-header {
+    margin-top: 136px;
     background-color: #282828;
+    padding: 40px 0;
     color: white;
     text-align: center;
+
+    & h1 {
+        margin: 0 !important;
+    }
 }

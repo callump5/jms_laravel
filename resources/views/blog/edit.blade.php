@@ -36,7 +36,7 @@ Edit Blog Post
                 <label for="metaTitle" class="col-2 col-form-label text-md-left">Meta Title</label>
 
                 <div class="col-10">
-                    <input value="{{$post->metaTitle}}" id="metaTitle" type="text" class="form-control" name="metaTitle" required>
+                    <input value="{{$post->meta}}" id="metaTitle" type="text" class="form-control" name="metaTitle" required>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@ Edit Blog Post
                 <label for="metaDescription" class="col-2 col-form-label text-md-left">Meta Description</label>
 
                 <div class="col-10">
-                <textarea id="metaDescription" type="textarea" class="form-control textarea-height" style="height: 500px;" name="metaDescription" required>{{$post->metaDescription}}</textarea>
+                <textarea id="metaDescription" type="textarea" class="form-control textarea-height" style="height: 500px;" name="metaDescription" required>{{$post->description}}</textarea>
                 </div>
             </div>
 

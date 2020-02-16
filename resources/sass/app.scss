@@ -11,6 +11,7 @@
 @import 'abstract/variables';
 @import 'abstract/mixins';
 
+
 @import 'base/animations';
 @import 'base/base';
 @import 'base/utilities';
@@ -18,9 +19,17 @@
 
 @import 'components/button';
 @import 'components/image-circles';
+@import 'components/tick-list';
+@import 'components/collapsable';
+@import 'components/page-header';
 
 @import "pages/home";
+@import "pages/contact";
+@import "pages/commercial";
+@import "pages/landlord";
+@import "pages/blog";
 
-
+@import "layout/contact";
 @import 'layout/landing';
 @import 'layout/header';
+@import 'layout/footer';

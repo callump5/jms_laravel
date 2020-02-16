@@ -9,7 +9,7 @@
 
 */
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif !important;
     color: #282828; 
 }
 
@@ -31,24 +31,52 @@ body {
   
 .heading-secondary {
     text-transform: uppercase;
+    display: inline-block;
     position: relative;
-    padding: .8rem 0;
+    padding: 10px 0;
+    margin-bottom: 15px !important;
+    font-size: 35px !important;
+
+    &::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        display: inline-block;
+        background-color: 
+        #1eabfd;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::before {
+        content: "";
+        height: 3px;
+        width: 100%;
+        display: inline-block;
+        background-color: 
+        #1eabfd;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     &--blue {
         color: #1eabfd; 
     }
 
-    &underline {
+    &--underline {
         border-bottom: 4px solid #1eabfd; 
     }
 
 }
-
-
 .heading-tertiary {
     position: relative;
-    display: block;
-    padding-bottom: 1rem; 
+    display: inline-block;
+    padding-bottom: 5px; 
+    margin-bottom: 7px;
     color: #282828;
     text-decoration: none;    
   

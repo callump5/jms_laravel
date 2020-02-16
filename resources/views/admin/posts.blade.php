@@ -1,8 +1,6 @@
 @extends('layouts.admin')
 
 
-@include('partials/header')
-
 
 @section('dashboard-title')
 Blog Posts
@@ -16,6 +14,7 @@ Blog Posts
         'text' => 'Add Item'
     ])
     @endcomponent
+    
 @endpush
 
 @section('dashboard-content')
@@ -30,7 +29,7 @@ Blog Posts
 
 
 @endsection
-
+@push('admin-scripts')
 
 <script type="text/javascript">
 
@@ -78,5 +77,4 @@ Blog Posts
     });
 
 </script>
-@include('partials/footer')
-
+@endpush

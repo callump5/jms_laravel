@@ -10,6 +10,8 @@
   <meta name="author" content="">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
+
+  <meta name="robots" content="noindex, nofollow" />
   <title>JMS Cleaning - Dashboard</title>
 
   <!-- Custom fonts for this template-->
@@ -125,7 +127,7 @@
   <script src="/js/demo/chart-pie-demo.js"></script>
   
 
-  @stack('footer-scripts')
+  @stack('admin-scripts')
 
 </body>
 

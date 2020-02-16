@@ -9,8 +9,16 @@
 }
 
 .paragraph {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
-    max-width: 850px;
     margin: 0 auto;
+}
+
+li, a, button {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.row {
+ margin: 0 !important;
 }

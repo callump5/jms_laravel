@@ -1,9 +1,9 @@
 .section-contact-page {
     &__item {
-        font-size: 1.8rem;
+        font-size: 22px;
 
         &--icon {
-            height: 4rem;
+            height: 30px;
 
             &-border {
                 display: flex;
@@ -13,8 +13,8 @@
                 border: 5px solid $color-primary;
                 border-radius: 50%;
                 margin: 0 auto;
-                height: 8rem;
-                width: 8rem;
+                height: 5rem;
+                width: 5rem;
                 margin-bottom: .5rem;
                 transition: all .2s;
                 @include box-shadow;

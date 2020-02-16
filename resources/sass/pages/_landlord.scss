@@ -1,8 +1,13 @@
 .section-landlord {
     &__service {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         background-color: white;
-        padding: 3rem 2rem;
         @include box-shadow;
         transition: all .2s;
 

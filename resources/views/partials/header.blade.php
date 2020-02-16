@@ -13,17 +13,17 @@
     -->
 
     <!-- Meta Tags -->
-    <title>JMS, Professional Commercial | Office | End of Tenancy Cleaning Service Essex</title>
     
-    <meta name="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="Office Cleaning Services, Commercial Cleaning Services, Cleaning Services UK,
     Office Cleaning, Commercial Cleaning Southend, Office Cleaning Essex, cleaning company, professional cleaning services,
     professional cleaning company, cleaning services company" />
-    <meta name="title" content="JMS Commercial Cleaning - Professional Cleaning Services">
-    <meta name="description" content="Based in Southend, Essex, JMS Commercial Cleaning is a reliable cleaning company that has built up a solid reputation, purely built on trust in Southend, Basildon, and surrounding areas. We pride ourselves on our reliable, consistent and friendly commercial cleaning service for our customers.
-    "/>
+    
+    @stack('meta')
+   
+    
     <!-- FB Tags -->
     <meta property="og:locale" content="en_UK" />
     <meta property="og:type" content="website" />

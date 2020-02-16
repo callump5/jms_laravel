@@ -9,9 +9,12 @@
     }
 }
 
+.transparent {
+    background-color: transparent !important;
+}
+
 .navbar {
-    background-color: transparent;
-    transition: all .8s;
+    background-color: white;
     color: #000000;
     letter-spacing: 2px;
 
@@ -23,7 +26,6 @@
 .bottom-nav{
     top:39px;
 }
-
 
 .logo {
     height: 70px;

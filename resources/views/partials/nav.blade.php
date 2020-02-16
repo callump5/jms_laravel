@@ -1,6 +1,6 @@
 
 <header class="clearfix shadow">
-    <nav class="navbar topnav fixed-top navbar-expand-lg scrolling-navbar">
+    <nav class="navbar solid-b topnav fixed-top navbar-expand-lg scrolling-navbar">
         <div class="container">
             
         <div>
@@ -22,22 +22,22 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link  {{ Request::is('about') ? 'active' : '' }}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Commercial Cleaning</a>
+                        <a class="nav-link  {{ Request::is('commercial-cleaning') ? 'active' : '' }}" href="/commercial-cleaning">Commercial Cleaning</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tenancy Cleaning</a>
+                        <a class="nav-link  {{ Request::is('end-of-tenancy-cleaning') ? 'active' : '' }}" href="/end-of-tenancy-cleaning">Tenancy Cleaning</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link  {{ Request::is('blog*') ? 'active' : '' }}" href="/blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link  {{ Request::is('contact') ? 'active' : '' }}" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -45,55 +45,33 @@
     </nav>
 </header>
 
-@push('footer-scripts')
-<script type="text/javascript">
 
-$(document).ready(function() {
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) { 
-              $('.navbar').addClass('solid');
-              $('.topnav').addClass('solid-b');
-          } else {
-              $('.navbar').removeClass('solid');
-              $('.topnav').removeClass('solid-b');
-          }
+@if(! Request::is('/') )
+    @push('footer-scripts')
+
+    <script type="text/javascript">
+        var coll = $(".collapsible");
+        
+        coll.on("click", function() {
+            
+            this.classList.toggle("collapsible__active");
+
+            var content = this.nextElementSibling;
+            
+            if (content.style.display == "block") {
+                content.style.display = "none";
+                $(this).find("span").text("+")
+            } else {
+                $(".collapsible__content").css("display", "none");
+                $('.collapsible').each(function(){
+                    $(this).find("span").text("+");
+                    $(this).removeClass("collapsible__active");
+                });
+                content.style.display = "block";
+                $(this).find("span").text("-");
+                $(this).addClass("collapsible__active");
+            }
         });
-});
-
-</script>
-@endpush
-<!--
-
-<div class="social-header__contact">
-    <div class="u-flex-row container">
-        <div>
-            <a href="mailto:info@jmscommercialcleaning.co.uk" class="social-header__link">info@jmscommercialcleaning.co.uk</a>
-        </div>
-        <div class="social-header__contact-socials">
-            <a href="tel:01702667455" class="social-header__link">01702 667455</a>
-            <a href="/contact.html" class="social-header__link">9.00 - 6.00</a>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="navigation">
-    <div class="u-flex-row container">
-        <div class="navigation__logo-circle">
-            <a href="/" class="navigation__logo-circle--link">
-                <img src="/logo/jms-original-logo.png" alt="JMS Logo" class="navigation__logo-circle--logo">
-            </a>
-        </div>
-        <nav class="navigation__nav">
-            <a href="/" class="navigation__nav--link {{ Request::is('/') ? 'active' : 'uh' }}">Home</a>
-            <a href="/about" class="navigation__nav--link {{ Request::is('about') ? 'active' : 'uh' }}">About</a>
-            <a href="/commercial-cleaning" class="navigation__nav--link {{ Request::is('commercial-cleaning') ? 'active' : 'uh' }}">Commerical Cleaning</a>
-            <a href="/end-of-tenancy" class="navigation__nav--link {{ Request::is('end-of-tenancy') ? 'active' : 'uh' }}">End Of Tenancy</a>
-            <a href="/blog" class="navigation__nav--link {{ Request::is('blog*') ? 'active' : 'uh' }}">Cleaning Tips</a>
-            <a href="/contact" class="navigation__nav--link {{ Request::is('contact') ? 'active' : 'uh' }}">Contact</a>
-        </nav>
-    </div>
-</div> -->
+    </script>
+    @endpush
+@endif
