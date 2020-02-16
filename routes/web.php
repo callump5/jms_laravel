@@ -22,6 +22,8 @@ if (App::environment('remote')) {
     URL::forceSchema('https');
 }
 
+Route::get('sitemap.xml', 'PageController@sitemap')->name('sitemap');
+
 
 Route::get('/403', 'PageController@forbid')->name('forbid');
 

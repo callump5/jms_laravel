@@ -25,5 +25,9 @@ class PageController extends Controller
     public function forbid(){
         return view('status.403');
     }
+
+    public function sitemap(){
+        return view('sitemap.index');
+    }
     
 }
