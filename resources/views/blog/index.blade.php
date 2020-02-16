@@ -16,7 +16,7 @@
             <section class="u-section-padding posts">
                 @foreach($posts as $post) 
                     <div class="blog-post">
-                        <div class="blog-post__thumb" style="background-image: url('/landing/pic1.jpg')"></div>
+                    <div class="blog-post__thumb" style="background-image: url('{{$post->image}}')"></div>
                         <div class="blog-post__content">
                             <a href="/blog/{{$post->slug}}" class="blog-posts__title heading-tertiary u-margin-small">{{$post->title}}</a>
                             <p class="paragraph u-margin-small">{{date('L F Y', strtotime($post->created_at))}}</p>

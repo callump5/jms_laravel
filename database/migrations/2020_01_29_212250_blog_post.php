@@ -22,6 +22,7 @@ class BlogPost extends Migration
             $table->string('slug')->unique();
             $table->string('meta');
             $table->text('description');
+            $table->string('image');
         });
     }
 

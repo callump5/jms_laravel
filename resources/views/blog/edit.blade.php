@@ -30,6 +30,15 @@ Edit Blog Post
                 </div> 
             </div>
 
+            
+            <div class="form-group row">
+                <label for="image" class="col-2 col-form-label text-md-left">Image</label>
+
+                <div class="col-10">
+                    <input value="{{$post->image}}" id="image" type="text" class="form-control" name="image" required>
+                </div>
+            </div>
+
 
 
             <div class="form-group row">

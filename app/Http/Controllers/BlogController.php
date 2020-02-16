@@ -39,7 +39,8 @@ class BlogController extends Controller
         $post->slug     = request('slug');
         $post->excerpt  = request('excerpt');
         $post->body     = request('body');
-        $post->meta    = request('meta');
+        $post->meta     = request('meta');
+        $post->image    = request('image');
         $post->description    = request('description');
         $post->save();
         return redirect('/admin-panel/blog-posts/');
