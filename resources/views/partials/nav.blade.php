@@ -16,7 +16,7 @@
         <div class="container">
             <a class="navbar-brand" href="#"><img class="logo" src="/logo/jms-original-logo.png" alt="JMS Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
+             <span class="navbar-toggler-icon"><i style="font-size: 35px; color:#282828;" class="fa fa-bars fa-1x"></i></span>
             </button>
             
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
