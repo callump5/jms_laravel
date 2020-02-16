@@ -40,10 +40,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Script -->
-    <script src="/js/jquery.js" defer></script>
-    <script src="/js/bootstrap.js" defer></script>
-    <script src="/js/bootstrap.bundle.js" defer></script>
-    <script src="/js/sweetalert2.min.js" defer></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/sweetalert2.min.js"></script>
 
 </head>
 <body>
