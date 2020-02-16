@@ -18,6 +18,11 @@ Route::get('/commercial-cleaning', 'PageController@commercial')->name('commercia
 Route::get('/end-of-tenancy-cleaning', 'PageController@tenancy')->name('tenancy');
 Route::get('/contact', 'PageController@contact')->name('contact');
 
+if (App::environment('remote')) {
+    URL::forceSchema('https');
+}
+
+
 Route::get('/403', 'PageController@forbid')->name('forbid');
 
 
