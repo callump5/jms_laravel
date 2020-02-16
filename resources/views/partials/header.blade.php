@@ -37,13 +37,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/sweetalert2.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Script -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
-    <script src="/js/sweetalert2.min.js"></script>
+    <script src="/js/jquery.js" defer></script>
+    <script src="/js/bootstrap.js" defer></script>
+    <script src="/js/bootstrap.bundle.js" defer></script>
+    <script src="/js/sweetalert2.min.js" defer></script>
 
 </head>
 <body>
