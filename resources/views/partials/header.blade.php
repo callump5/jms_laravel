@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123955938-4"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,8 +10,6 @@
 
     gtag('config', 'UA-123955938-4');
     </script>
-    -->
-
     <!-- Meta Tags -->
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
