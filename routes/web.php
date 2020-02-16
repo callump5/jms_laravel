@@ -51,3 +51,8 @@ Route::delete('/admin-panel/blog-post/{post}/delete', 'BlogController@delete')->
 Route::get('/admin-panel/contact-request/{contact}/view', 'AdminController@contactShow')->name('view-contact')->middleware('auth');;
 Route::delete('/admin-panel/contact-request/delete', 'AdminController@contactDelete')->name('delete-contact')->middleware('auth');;
 Auth::routes();
+
+
+Route::any('/{page?}',function(){
+    return View::make('errors.404');
+  })->where('page','.*');
